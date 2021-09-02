@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Lesson from './13_HighOrderComponents/Lesson';
 import './09_CSS/style.css'
+import MyApi from './16_API-1/MyApi';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Lesson />
+        <MyApi />
       </div>
     );
   }

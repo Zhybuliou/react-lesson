@@ -7,7 +7,7 @@ class MyPortal extends Component {
     componentDidMount() {
         document.body.appendChild(this.el)
     }
-    componentWillMount() {
+    componentWillUnmount() {
         document.body.removeChild(this.el)
     }
 
@@ -20,7 +20,10 @@ export default class Portals extends Component {
     render() {
         return (
             <div>
-                !!!
+                <span>Text</span>
+                <MyPortal>
+                    <div>Test Portal</div>
+                </MyPortal>
             </div>
         )
     }
